@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代选择器 */
+        div div p{
+            color: red;
+        }
+        /* 子代选择器 只选儿子*/
+        div div>a{
+            color: seagreen;
+        }
+        div div p>a{
+            color: chocolate;
+        }
+        /* 并集选择器 */
+        div p,
+        div div,
+        div span,
+        div h1{
+            color: aquamarine;
+        }
+        /* 交集选择器 */
+        div>p.box{
+            color: blueviolet;
+        }
+        /* :hover伪类选择器 悬停的时候文字颜色改变*/
+        a:hover{
+            color: palevioletred;
+        }
+    </style>
+
+</head>
+<body>
+    <div><!--后代选择器-->
+        <p>这是一个p标签</p>
+        <div>
+            <p>这是一个div下p标签</p>
+        </div>
+    </div>
+    <div><!--子代选择器-->
+        <div>
+            <a href="#">这是div里的a</a>
+            <p>
+                <a href="#">这是div里p里的a</a> 
+            </p>
+        </div>
+    </div>
+    <div><!--交集选择器-->
+        <p>ppp</p>
+        <div>div</div>
+        <span>span </span>
+        <h1>h1 </h1>
+    </div>
+    <div>
+        <p class="box">这是p标签：box</p>
+        <p>pppppp</p>
+        <div class="box">这是div标签：box</div>
+    </div>
+    <a href="#">这是悬停改变颜色a标签</a>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <style>
+        .denglu{
+            height: 200px;
+            width: 300px;
+            margin: 0 auto;
+            /* background-color: aqua; */
+            vertical-align: auto;
+            display: flex;
+
+        }
+        .ziti{
+            height: 200px;
+            width: 250px;
+            /* font-size: large; */
+            /* background-color: aquamarine; */
+            margin: 0 auto;
+        }
+        h1{
+            text-align: center;
+
+        }
+        .big{
+            height: 720px;
+            width: 1200px;
+            /* background-color: blue; */
+            margin: 0 auto;
+            background-image: url(图片/OIP-C.jfif);
+            color: aliceblue;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <h1>登陆账号后可查看</h1>
+        <hr>
+        <div class="denglu">
+            <div class="ziti">
+                <br><br>
+                <form action=""><!--让提交重置等功能可以实现-->
+                    用户名：<input type="text" placeholder="请输入用户名"><br>
+                    密码框：<input type="password" placeholder="请输入密码"><br>
+                    性别：<input type="radio" name="sex" id="nan"> <label for="nan">男</label>
+                            <label><input type="radio" name="sex" checked> 女</label><br>
+                    住址：<select><!--下拉菜单-->
+                            <option>天津</option>
+                            <option selected>黑龙江</option>
+                            <option>嘿嘿</option>
+                    </select><br>
+                    上传文件：<input type="file" multiple><br>
+                    <input type="checkbox" checked>我同意注册条款<br>
+                    <a href="./内容.html">
+                        <div>
+                            <input type="submit" value="提交">
+                        </div>
+                    </a>
+
+                    <input type="reset" value="重置">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

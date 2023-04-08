@@ -1,0 +1,8 @@
+p {
+    color: rgb(22, 238, 238);
+    font-size: 15px;
+    background-color: aliceblue;
+    text: index 2em;/*段前空两格*/
+    text-align: center;/*居中*/
+    line-height: normal;/*行高*/
+}

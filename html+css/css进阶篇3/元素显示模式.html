@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 控制文字属性都可以继承,本身具有属性不必继承父属性 -->
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            display: inline;/*块级元素转行内元素*/
+                }
+        span{
+            width: 50px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: block;/*行内元素转块级元素*/
+        }
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 块级元素 -->
+    <div>1111111</div>
+    <div>2222222</div>
+    <!-- 行内元素 :不换行，设置宽高不生效，尺寸和内容大小相同-->
+    <span>span</span>
+    <span>span</span>
+    <!-- 行内块元素 -->
+    <img src="./图片/鬼刀.jpg" alt="">
+    <img src="./图片/鬼刀.jpg" alt="">
+    <!-- 元素显示模式转换 -->
+
+
+</body>
+</html>

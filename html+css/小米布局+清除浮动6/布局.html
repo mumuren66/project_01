@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            height: 50px;
+            background-color: #333;
+        }
+        .two{
+            width: 1226px;
+            height: 100px;
+            background-color: #ffc0cb;
+            margin: 0 auto;
+        }
+        .three{
+            width: 1226px;
+            height: 614px;
+            /* background-color: green; */
+            margin: 0 auto;
+        }
+        .three .a1{
+            float: left;
+            width: 234px;
+            height: 614px;
+            background-color: #ffa500;
+            margin-right: 14px;
+        }
+        .three .a2{
+            float: left;
+            width: 978px;
+            height: 614px;
+            /* background-color: #87ceeb; */
+        }
+        .three .a2 .b1{
+            list-style: none;
+        }
+        .b1 li{
+            width: 234px;
+            height: 300px;
+            background-color: #87ceeb;
+            float: left;
+            margin-right: 14px;
+            margin-bottom: 14px;
+        }
+        .b1 li:nth-child(4n){
+            margin-right: 0;
+        }
+        .nav1 li{
+            list-style: none;
+            float: left;
+        }
+        .nav1 li a{
+            width: 100px;
+            height: 50px;
+            /* background-color: green; */
+            display: inline-block;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .nav li a:hover{
+            background-color: pink;
+        }
+        .nav1 .s1 ,.nav .s2{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="nav1">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li class="s1"><a href="#">10</a></li>
+            <li class="s2"><a href="#">9</a></li>
+        </ul>
+    </div>
+    <div class="two"></div>
+    <div class="three">
+        <div class="a1"></div>
+        <div class="a2">
+            <ul class="b1">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

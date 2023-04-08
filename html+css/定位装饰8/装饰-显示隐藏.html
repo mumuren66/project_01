@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 202px;
+        }
+        .one{
+            /* 隐藏后占位 */
+            /* visibility: hidden; */
+
+            /* display不占位的隐藏 */
+            /* display: none; */
+            background-color: pink;
+        }
+        .two{
+            /* display: none; */
+            background-color: skyblue;
+        }
+        .a1{
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            display: none;
+
+        }
+        /* 鼠标悬停显示 */
+        .two:hover .a1{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">one</div>
+    <div class="two">
+        <div class="a1"></div>
+    </div>
+</body>
+</html>

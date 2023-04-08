@@ -1,0 +1,22 @@
+body {
+	background-image: url("../img/R-C.jfif");
+}
+h1{
+	text-align: center;
+	color:white;
+}
+p{
+	text-indent: 32px;
+	font-size:16px;
+	line-height: 32px;
+	color: white;
+}
+h2{
+	text-align: center;
+	color:white;
+}
+img{
+	<!--position:absolute;-->
+	left:80%;
+	<!--margin-left:-181px;-->
+}
